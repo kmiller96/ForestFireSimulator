@@ -10,7 +10,7 @@ class RandomTreeGrowthEngine:
         self.growth_probability = float(growth_probability)
 
     def step(self, board):
-        if random() <= self.growth_probability:  # Unsuccessful. Early exit.
+        if random() <= self.growth_probability:
             x = randint(0, board.xdim - 1)
             y = randint(0, board.ydim - 1)
 
